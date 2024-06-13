@@ -18,6 +18,7 @@
         }
         .main {
             display: flex;
+            flex-direction: row;
             justify-content: space-evenly;
             align-items: start;
         }
@@ -36,9 +37,23 @@
         }
         .info img {
             filter: contrast(200%);
+           
+        }
+        .similar_image img {
+            width:400px;
         }
         #red {
             color:red;
+        }
+
+        @media only screen and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+             .main {
+            display: flex;
+            flex-direction: column;
+        }
         }
     </style>
 </head>
@@ -51,6 +66,10 @@
     
 
 <div class="main">
+    <div class="similar_image">
+     <img src="./62533479.jpg" alt="">
+    </div>
+    
     <div class="info">
         <img src="WhatsApp Image 2024-06-13 at 19.28.25_0cf52eaa.jpg" alt="profile_pic" width="100px" >
         
@@ -62,11 +81,6 @@
        </div>
         
     </div>
-
-     
-   <div class="similar_image">
-     <img src="./62533479.jpg" alt="">
-   </div>
 </div>
 
 
